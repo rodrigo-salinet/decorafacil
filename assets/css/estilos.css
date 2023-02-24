@@ -1,0 +1,21 @@
+.sombreado-pequeno, .carousel-item div {
+    text-shadow: 0px 0px 10px #000;
+}
+
+.sombreado-medio {
+    text-shadow: 0px 0px 30px #000;
+}
+
+.sombreado-grande {
+    text-shadow: 0px 0px 60px #000;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0,114,104,.5);
+}
+
+.btn-whatsapp {
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+}
