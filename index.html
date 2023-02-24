@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/aos.min.css" />
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
     <link rel="stylesheet" href="assets/css/cookies.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
@@ -63,12 +64,12 @@
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <img src="assets/img/logo300x191.jpg" alt="Logo Decora Fácil" width="300" height="191" style="filter: drop-shadow(0px 0px 10px #fff);" data-aos="zoom-out" data-aos-duration="1200" data-aos-once="false">
+                    <img src="assets/img/logo300x191.jpg" alt="Logo Decora Fácil" width="300" height="191" style="filter: drop-shadow(0px 0px 10px #fff);" data-aos="zoom-out" data-aos-duration="1200" data-aos-once="false" loading="lazy">
                     <hr class="light my-4 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200" data-aos-once="false">
                 </div>
             </div>
             <div class="col-lg-8 mx-auto">
-                <p class="text-faded mb-5" style="text-shadow: 0px 0px 10px #222;" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="false">Estamos no mercado desde 2011 e somos especializados em vendas de cortinas e persianas, com serviço de instalação, higienização e manutenção de peças para cortinas e persianas!</p>
+                <p class="text-faded mb-5 sombreado-pequeno" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="false">Estamos no mercado desde 2011 e somos especializados em vendas de cortinas e persianas, com serviço de instalação, higienização e manutenção de peças para cortinas e persianas!</p>
                 <a class="btn btn-outline-dark btn-xl text-white" role="button" href="#about" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-once="false">Saiba mais</a>
             </div>
         </div>
@@ -91,7 +92,7 @@
             <div class="row g-0 popup-gallery">
                 <div class="col-sm-6 col-lg-4" id="btn_cortina_premium" data-aos="fade-down" data-aos-duration="1200" data-aos-once="false">
                     <a class="portfolio-box" href="#cortina_premium" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cortina_premium">
-                        <img class="img-fluid" src="assets/img/thumbnails/cortina_premium.jpg" loading="lazy">
+                        <img class="img-fluid" src="assets/img/thumbnails/cortina_premium.jpg" width="650" height="350" loading="lazy">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Conforto, Sofisticação e Beleza</span></div>
@@ -108,21 +109,21 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://picsum.photos/100" class="d-block w-100" alt="...">
+                                    <img src="/assets/img/fullsize/cortina_bege.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Conforto</h5>
                                         <p>Bem estar em primeiro lugar.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://picsum.photos/200" class="d-block w-100" alt="...">
+                                    <img src="/assets/img/fullsize/cortina_cinza.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Elegância</h5>
                                         <p>Ambiente harmonioso e leve.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://picsum.photos/300" class="d-block w-100" alt="...">
+                                    <img src="/assets/img/fullsize/cortina_creme.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Beleza</h5>
                                         <p>Desperte "la grazia" (a graciosidade) em você.</p>
@@ -142,7 +143,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4" id="btn_cortina_basic" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100" data-aos-once="false">
                     <a class="portfolio-box" href="#cortina_basic" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cortina_basic">
-                        <img class="img-fluid" src="assets/img/thumbnails/cortina_basic.jpg" loading="lazy">
+                        <img class="img-fluid" src="assets/img/thumbnails/cortina_basic.jpg" width="650" height="350" loading="lazy">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Leveza e Minimalismo</span></div>
@@ -151,15 +152,49 @@
                         </div>
                     </a>
                     <div class="collapse text-white bg-primary" id="cortina_basic">
-                        <div class="container text-center">
-                            <div class="project-category text-faded"><span>Leveza e Minimalismo</span></div>
-                            <div class="project-name"><span>CORTINAS DI BASE</span></div>
+                        <div id="carousel_cortina_basic" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_cortina_basic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_cortina_basic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_cortina_basic" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/fullsize/cortina_cinza2.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Leveza</h5>
+                                        <p>Delicadeza nos detalhes.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/cortina_palha.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Minimalismo</h5>
+                                        <p>Elementar para o seu lar.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/cortina_creme2.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Simplicidade</h5>
+                                        <p>Apego ao desapego.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_cortina_basic" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_cortina_basic" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4" id="btn_acessorios" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200" data-aos-once="false">
                     <a class="portfolio-box" href="#acessorios" data-bs-toggle="collapse" aria-expanded="false" aria-controls="acessorios">
-                        <img class="img-fluid" src="assets/img/thumbnails/acessorios.jpg" loading="lazy">
+                        <img class="img-fluid" src="assets/img/thumbnails/acessorios.jpg" width="650" height="350" loading="lazy">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Tudo para Cortinas e Persianas</span></div>
@@ -168,15 +203,49 @@
                         </div>
                     </a>
                     <div class="collapse text-white bg-primary" id="acessorios">
-                        <div class="container text-center">
-                            <div class="project-category text-faded"><span>Tudo para Cortinas e Persianas</span></div>
-                            <div class="project-name"><span>ACESSÓRIOS PARA CORTINAS E PERSIANAS</span></div>
+                        <div id="carousel_acessorios" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_acessorios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_acessorios" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_acessorios" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/fullsize/ambiente_copa_espelho.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Qualidade</h5>
+                                        <p>Produtos que duram.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/papel_de_parede_preto.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Variedade</h5>
+                                        <p>Encontre aqui o acessório de que precisa.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/papel_de_parede_estampa_marrom.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Diversidade</h5>
+                                        <p>Temos o acessório para sua cortina e persiana que você quiser.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_acessorios" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_acessorios" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4" id="btn_persiana_master" data-aos="fade-up" data-aos-duration="1200" data-aos-once="false">
                     <a class="portfolio-box" href="#persiana_master" data-bs-toggle="collapse" aria-expanded="false" aria-controls="persiana_master">
-                        <img class="img-fluid" src="assets/img/thumbnails/persiana_master.jpg" loading="lazy">
+                        <img class="img-fluid" src="assets/img/thumbnails/persiana_master.jpg" width="650" height="350" loading="lazy">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Inovação, Tecnologia e Aconchego</span></div>
@@ -185,15 +254,49 @@
                         </div>
                     </a>
                     <div class="collapse text-white bg-primary" id="persiana_master">
-                        <div class="container text-center">
-                            <div class="project-category text-faded"><span>Inovação, Tecnologia e Aconchego</span></div>
-                            <div class="project-name"><span>PERSIANAS MAESTRA</span></div>
+                        <div id="carousel_persiana_master" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_persiana_master" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_persiana_master" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_persiana_master" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/fullsize/persiana_romana_creme2.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Inovação</h5>
+                                        <p>Renove seu lar com o que há de melhor.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/persianas_romanas_palha2.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Tecnologia</h5>
+                                        <p>Sua casa mais moderna.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/persiana_double_vision_bronze.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Aconchego</h5>
+                                        <p>Nada melhor do que voltar para casa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_persiana_master" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_persiana_master" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4" id="btn_persiana_light" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" data-aos-once="false">
                     <a class="portfolio-box" href="#persiana_light" data-bs-toggle="collapse" aria-expanded="false" aria-controls="persiana_light">
-                        <img class="img-fluid" src="assets/img/thumbnails/persiana_light.jpg" loading="lazy">
+                        <img class="img-fluid" src="assets/img/thumbnails/persiana_light.jpg" width="650" height="350" loading="lazy">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Facilidade e Comodidade</span></div>
@@ -202,15 +305,49 @@
                         </div>
                     </a>
                     <div class="collapse text-white bg-primary" id="persiana_light">
-                        <div class="container text-center">
-                            <div class="project-category text-faded"><span>Facilidade e Comodidade</span></div>
-                            <div class="project-name"><span>PERSIANAS LEGGERA</span></div>
+                        <div id="carousel_persiana_light" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_persiana_light" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_persiana_light" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_persiana_light" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/fullsize/persiana_horizontal_preta.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Facilidade</h5>
+                                        <p>Parcelamos em até três vezes sem jhuros no cartão de crédito.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/persiana_rolo_branca2.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Comodidade</h5>
+                                        <p>Instalamos sua persiana em até 48 horas após a chegada do produto pela fabricante.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/cortina_marrom_persiana_horizontal_prata.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Alívio</h5>
+                                        <p>Ambiente livre e refrescante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_persiana_light" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_persiana_light" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4" id="btn_manutencao" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="false">
                     <a class="portfolio-box" href="#manutencao" data-bs-toggle="collapse" aria-expanded="false" aria-controls="manutencao">
-                        <img class="img-fluid" src="assets/img/thumbnails/manutencao.jpg" loading="lazy">
+                        <img class="img-fluid" src="assets/img/thumbnails/manutencao.jpg" width="650" height="350" loading="lazy">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Encontre profissionais qualificados que deixarão suas cortinas e persianas como novas</span></div>
@@ -219,9 +356,43 @@
                         </div>
                     </a>
                     <div class="collapse text-white bg-primary" id="manutencao">
-                        <div class="container text-center">
-                            <div class="project-category text-faded"><span>Encontre profissionais qualificados que deixarão suas cortinas e persianas como novas</span></div>
-                            <div class="project-name"><span>MANUTENÇÃO E HIGIENIZAÇÃO</span></div>
+                        <div id="carousel_manutencao" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_manutencao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_manutencao" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_manutencao" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/fullsize/ambiente_sala_espelho.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Manutenção</h5>
+                                        <p>Consertamos suas cortinas e persianas.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/ambiente_sala_persiana_romana_branca2.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Higienização</h5>
+                                        <p>Deixe suas cortinas e persianas como novas.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/fullsize/ambiente_copa_espelho.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Regulagens</h5>
+                                        <p>Regulamos suas cortinas e persianas com detalhes que fazem toda diferença.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_manutencao" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_manutencao" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -241,9 +412,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-3 text-center">
-                    <div class="mx-auto service-box mt-5"><i class="fa fa-diamond fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="1200" data-aos-once="false"></i>
-                        <h3 class="mb-3">Veja nossos casos de sucesso</h3>
-                        <p class="text-muted mb-0">Confira os depoimentos de satisfação de nossos clientes e amigos.</p>
+                    <div class="mx-auto service-box mt-5">
+                        <a href="#depoimentos" data-bs-toggle="collapse" aria-expanded="false" aria-controls="manutencao">
+                            <i class="fa fa-diamond fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="1200" data-aos-once="false"></i>
+                            <h3 class="mb-3">Veja nossos casos de sucesso</h3>
+                            <p class="text-muted mb-0">Confira os depoimentos de satisfação de nossos clientes e amigos.</p>
+                        </a>
+                    </div>
+                    <div class="collapse text-white bg-primary" id="depoimentos">
+                        <div id="carousel_depoimentos" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_depoimentos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_depoimentos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_depoimentos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/depoimentos/IMG_2253.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Carinho</h5>
+                                        <p>Tratamento humnizado.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/depoimentos/IMG_2422.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Cuidado</h5>
+                                        <p>Zelo minucioso na finalização de cada atendimento.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/depoimentos/IMG_3074.jpg" width="650" height="350" class="d-block w-100" loading="lazy">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Atenção</h5>
+                                        <p>Percepção em todos os detalhes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_depoimentos" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel_depoimentos" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center" id="btn_coleta_entrega">
@@ -299,7 +513,26 @@
                     </p>
                 </div>
                 <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="1200" data-aos-once="false"></i>
-                    <p>Email: <a href="mailto:atendimento@decorafacil.arq.br">atendimento@decorafacil.arq.br</a></p>
+                    <p>Email: <a href="#div_contato" data-bs-toggle="collapse" aria-expanded="false" aria-controls="div_contato">atendimento@decorafacil.arq.br</a></p>
+                    <form method="post" action="#" id="frm_contato">
+                        <div class="container collapse text-white bg-dark" id="div_contato" style="padding-top: 15px; padding-bottom: 15px;">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input name="txt_nome" type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input name="txt_email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">@exemplo.com.br</span>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Mensagem</span>
+                                <textarea name="txt_mensagem" class="form-control" aria-label="Mensagem"></textarea>
+                            </div>
+                            <div class="input-group">
+                                <input class="form-control btn btn-success" type="submit" role="button" value="Enviar" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -473,6 +706,10 @@
         <p><em>RODRIGO SALINET DA SILVA (bacharel em direito desde 2011)</em></p>
         <p><em>rodrigo.salinet@gmail.com</em></p>
     </div>
+
+    <button type="button" class="btn btn-md btn-success rounded-circle btn-whatsapp">
+        <a role="button" href="https://api.whatsapp.com/send?phone=5543999176506" target="_blank"><i class="fa fa-whatsapp text-white fa-2x"></i></a>
+    </button>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
