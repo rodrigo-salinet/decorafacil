@@ -1,8 +1,3 @@
-var purecookieTitle = "Nossos cookies estão atualizados!";
-var purecookieDesc = "Ao usar este site, você automaticamente aceita que seu computador utilize os cookies em seu navegador, para melhorar sua experiência de navegação em todas as páginas.";
-var purecookieLink = '<a href="#politica" data-bs-toggle="collapse" data-bs-target="#politica" aria-expanded="false" aria-controls="politica">Saiba mais</a>';
-var purecookieButton = "Entendido!";
-
 /**
  * function pureFadeIn(e,o){var i=document.getElementById(e);i.style.opacity=0,i.style.display=o||"block",function e(){var o=parseFloat(i.style.opacity);(o+=.02)>1||(i.style.opacity=o,requestAnimationFrame(e))}()}
  */
@@ -10,11 +5,11 @@ function pureFadeIn(e,o) {
     var i = document.getElementById(e);
     i.style.opacity = 0,
     i.style.display = o || "block",
-    
+
     function e() {
         var o = parseFloat(i.style.opacity);
         (o += .02) > 1 || (
-            i.style.opacity = o, 
+            i.style.opacity = o,
             requestAnimationFrame(e)
         );
     }();
@@ -67,7 +62,7 @@ function eraseCookie(e) {
  */
 function cookieConsent() {
     getCookie("purecookieDismiss") || (
-        document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><b class="text-white">' + purecookieTitle + '</b></div><div class="cookieDesc"><p>' + purecookieDesc + " " + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + "</a></div></div>",
+        document.getElementById('cookieConsentContainer').style.display = "block",
         pureFadeIn("cookieConsentContainer")
     );
 };
