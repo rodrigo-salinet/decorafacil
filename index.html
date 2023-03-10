@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
     <link rel="stylesheet" href="assets/css/cookies.css" />
     <link rel="stylesheet" href="assets/css/estilos.css" />
+    <!-- <link rel="stylesheet" href="assets/css/parallax.css" /> -->
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
@@ -58,21 +59,21 @@
         </div>
     </nav>
 
-    <header class="text-center text-white d-flex masthead" style="background-image:url('assets/img/fullsize/cortina_palco.jpg');" loading="lazy">
+    <header class="text-center text-white d-flex masthead">
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <img src="assets/img/logo300x191.jpg" alt="Logo Decora Fácil" width="300" height="191" style="filter: opacity(70%); border-radius: 5px" loading="lazy" data-aos="fade-out" data-aos-duration="1200" data-aos-once="false">
                     <hr class="light my-4 aos-init aos-animate" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200" data-aos-once="false" />
                 </div>
-            </div>
-            <div class="col-lg-8 mx-auto">
-                <p class="text-faded mb-5 sombreado-pequeno" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="false">
-                    Estamos no mercado desde 2011 e somos especializados em vendas de cortinas e persianas, com serviço de instalação, higienização e manutenção de peças para cortinas e persianas!
-                </p>
-                <a class="btn btn-outline-dark btn-xl text-white" role="button" href="#about" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-once="false">
-                    Saiba mais
-                </a>
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-faded mb-5 sombreado-pequeno" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="false">
+                        Estamos no mercado desde 2011 e somos especializados em vendas de cortinas e persianas, com serviço de instalação, higienização e manutenção de peças para cortinas e persianas!
+                    </p>
+                    <a class="btn btn-outline-dark btn-xl text-white border border-light" role="button" href="#about" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-once="false">
+                        Saiba mais
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -88,7 +89,7 @@
                     <p class="text-black mb-4 text-uppercase fw-bold" data-aos="fade-out" data-aos-duration="1200" data-aos-delay="400" data-aos-once="false">
                         Há mais de 12 anos em Londrina e região. Conhecemos em cada detalhe as necessidades dos nossos clientes, por isso, podemos garantir serviços de extrema qualidade com o melhor custo-benefício. Por meio de um sistema único de limpeza, somos altamente reconhecidos no mercado!
                     </p>
-                    <a class="btn btn-outline-dark btn-xl text-white" role="button" href="#portfolio" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="600" data-aos-once="false">
+                    <a class="btn btn-outline-dark btn-xl text-white border border-light" role="button" href="#portfolio" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="600" data-aos-once="false">
                         Vamos lá!
                     </a>
                 </div>
@@ -96,7 +97,7 @@
         </div>
     </section>
 
-    <section id="portfolio" class="p-0">
+    <section id="portfolio" class="p-0 bg-dark">
         <div class="container-fluid p-0">
             <div class="row g-0 popup-gallery">
                 <div class="col-sm-6 col-lg-4" id="btn_cortina_premium" data-aos="fade-down" data-aos-duration="1200" data-aos-once="false">
@@ -409,7 +410,7 @@
         </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -494,14 +495,14 @@
     <section class="text-white bg-dark" id="catalog">
         <div class="container text-center">
             <h2 class="mb-4">
-                <a class="btn btn-outline-dark btn-xl text-white sr-button" role="button" href="/assets/downloads/catalogo.pdf" target="_blank" data-aos="fade-in" data-aos-duration="1200" data-aos-once="false">
+                <a class="btn btn-outline-dark btn-xl text-white sr-button border border-light" role="button" href="/assets/downloads/catalogo.pdf" target="_blank" data-aos="fade-in" data-aos-duration="1200" data-aos-once="false">
                     Veja agora nosso catálogo completo de cortinas e persianas!
                 </a>
             </h2>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center mx-auto">
@@ -524,7 +525,7 @@
                 <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="fade-in" data-aos-duration="1200" data-aos-once="false"></i>
                     <p>Email: <a href="#div_contato" data-bs-toggle="collapse" aria-expanded="false" aria-controls="div_contato">atendimento@decorafacil.arq.br</a></p>
                     <form method="post" action="#" id="frm_contato">
-                        <div class="container collapse text-white bg-dark" id="div_contato" style="padding-top: 15px; padding-bottom: 15px;">
+                        <div class="container collapse text-white border border-dark" id="div_contato" style="padding-top: 15px; padding-bottom: 15px;">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">@</span>
                                 <input name="txt_nome" type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
@@ -547,23 +548,23 @@
         </div>
     </section>
 
-    <section class="text-center footer bg-secondary" id="info">
+    <section class="text-center" id="info">
         <div class="container">
             <div class="container text-white">
                 <div class="row">
-                    <div class="col-lg mx-auto mb-5 mb-lg-0" id="localizacao" data-aos="slide-down" data-aos-duration="1200" data-aos-once="false">
-                        <h4 class="text-uppercase mb-4 fw-bolder text-black">Localização</h4>
+                    <div class="col-lg mx-auto mb-5 mb-lg-0" id="localizacao" data-aos="slide-up" data-aos-duration="1200" data-aos-once="false">
+                        <h4 class="text-uppercase mb-4 fw-bolder text-black borda-branca">Localização</h4>
                         <p>Av. dos Pioneiros 1100</p>
                         <p>Jd. Morumbi, Londrina - PR</p>
                         <p>CEP 86036-360</p>
                     </div>
                     <div class="col-lg mx-auto mb-5 mb-lg-0" id="atendimento" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="200" data-aos-once="false">
-                        <h4 class="text-uppercase mb-4 fw-bolder text-black">Atendimento</h4>
-                        <p>De Segunda a Sexta <br /> <span class="text-black">das 08:00 às 18:00</span></p>
-                        <p>Aos Sábados <br /> <span class="text-black">das 09:00 às 13:00</span></p>
+                        <h4 class="text-uppercase mb-4 fw-bolder text-black borda-branca">Atendimento</h4>
+                        <p>De Segunda a Sexta <br /> <span class="fw-bolder"><u>das 08:00 às 18:00</u></span></p>
+                        <p>Aos Sábados <br /> <span class="fw-bolder"><u>das 09:00 às 13:00</u></span></p>
                     </div>
                     <div class="col-lg-4 mx-auto" id="profissional" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-once="false">
-                        <h4 class="text-uppercase mb-4 fw-bolder text-black">Tatiana Cardoso Medeiros</h4>
+                        <h4 class="text-uppercase mb-4 fw-bolder text-black borda-branca" id="arquiteta">Tatiana Cardoso Medeiros</h4>
                         <p class="lead mb-0"><span>Arquiteta e Urbanista</span></p>
                         <p class="lead mb-0"><span>CNPJ: 13.353.185/0001-60</span></p>
                         <p class="lead mb-0"><span>Cau: A264647-1</span></p>
