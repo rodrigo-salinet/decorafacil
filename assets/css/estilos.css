@@ -19,3 +19,34 @@
     right: 2px;
     bottom: 2px;
 }
+
+body {
+    background-image: url('/assets/img/fullsize/cortina_palco.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.borda-branca {
+    text-shadow:
+        1px 0 #fff,
+        -1px 0 #fff,
+        0 1px #fff,
+        0 -1px #fff,
+        1px 1px #fff,
+        -1px -1px #fff,
+        1px -1px #fff,
+        -1px 1px #fff;
+}
+
+@font-face {
+    font-family: 'Californian FB';
+    src: url('/assets/fonts/californian-fb-3.ttf?v=1.00') format('truetype'),
+    url('/assets/fonts/californian-fb-bold.ttf?v=1.00') format('truetype'),
+    url('/assets/fonts/californian-fb-italic.ttf?v=1.00') format('truetype');
+}
+
+.arquiteta {
+    font-family: 'Californian FB';
+}
