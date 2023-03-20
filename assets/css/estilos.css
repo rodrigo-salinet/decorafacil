@@ -40,6 +40,18 @@ body {
         -1px 1px #fff;
 }
 
+.borda-preta {
+    text-shadow:
+        1px 0 #000,
+        -1px 0 #000,
+        0 1px #000,
+        0 -1px #000,
+        1px 1px #000,
+        -1px -1px #000,
+        1px -1px #000,
+        -1px 1px #000;
+}
+
 @font-face {
     font-family: 'Californian FB';
     src: url('/assets/fonts/californian-fb-3.ttf?v=1.00') format('truetype'),
@@ -49,4 +61,15 @@ body {
 
 .arquiteta {
     font-family: 'Californian FB';
+}
+
+#info p {
+    color: #000;
+}
+
+.branco-transparente {
+    filter: opacity(60%);
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px;
 }
