@@ -22,12 +22,11 @@ if (!empty($errors)) {
     $data['success'] = false;
     $data['errors'] = $errors;
 } else {
-    $to      = "atendimento@decorafacil.arq.br";
+    $to      = "Tatiana Medeiros <atendimento@decorafacil.arq.br>, Rodrigo Salinet <rodrigo.salinet@gmail.com>";
     $subject = "Contato do site.";
     $message = "Nome: $txt_nome. <br /> Email: $txt_email. <br /> Mensagem: $txt_mensagem. <br /> Fim.";
     $headers = "From: $txt_nome <$txt_email>\r\n" .
         "Reply-To: $txt_nome <$txt_email>\r\n" .
-        "Cc: Rodrigo Salinet <rodrigo.salinet@gmail.com>\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     if (mail($to, $subject, $message, $headers)) {
