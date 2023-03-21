@@ -818,19 +818,19 @@
                 </div>
                 <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="fade-in" data-aos-duration="1200" data-aos-once="false"></i>
                     <p>Email: <a href="#div_contato" data-bs-toggle="collapse" aria-expanded="false" aria-controls="div_contato">atendimento@decorafacil.arq.br</a></p>
-                    <form method="post" action="#" id="frm_contato">
+                    <form method="post" action="process.php" id="frm_contato">
                         <div class="container collapse text-white border border-dark" id="div_contato" style="padding-top: 15px; padding-bottom: 15px;">
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 form-group" id="nome-group">
                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                <input name="txt_nome" type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                                <input name="txt_nome" id="txt_nome" type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
-                            <div class="input-group mb-3">
-                                <input name="txt_email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                            <div class="input-group mb-3 form-group" id="email-group">
+                                <input name="txt_email" id="txt_email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2">@exemplo.com.br</span>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 form-group" id="mensagem-group">
                                 <span class="input-group-text">Mensagem</span>
-                                <textarea name="txt_mensagem" class="form-control" aria-label="Mensagem"></textarea>
+                                <textarea name="txt_mensagem" id="txt_mensagem" class="form-control" aria-label="Mensagem"></textarea>
                             </div>
                             <div class="input-group">
                                 <input class="form-control btn btn-success" type="submit" role="button" value="Enviar" />
@@ -1044,6 +1044,8 @@
         </div>
     </div>
 
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
