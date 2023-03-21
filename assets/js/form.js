@@ -23,21 +23,21 @@ $(document).ready(function () {
                 if (data.errors.txt_nome) {
                     $("#nome-group").addClass("has-error");
                     $("#nome-group").append(
-                        '<div class="help-block">' + data.errors.txt_nome + "</div>"
+                        '<div class="help-block input-group mb-3">' + data.errors.txt_nome + " ⬆</div>"
                     );
                 }
         
                 if (data.errors.txt_email) {
                     $("#email-group").addClass("has-error");
                     $("#email-group").append(
-                        '<div class="help-block">' + data.errors.txt_email + "</div>"
+                        '<div class="help-block input-group mb-3">' + data.errors.txt_email + " ⬆</div>"
                     );
                 }
         
                 if (data.errors.txt_mensagem) {
                     $("#mensagem-group").addClass("has-error");
                     $("#mensagem-group").append(
-                        '<div class="help-block">' + data.errors.txt_mensagem + "</div>"
+                        '<div class="help-block input-group mb-3">' + data.errors.txt_mensagem + " ⬆</div>"
                     );
                 }
             } else {
