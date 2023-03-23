@@ -1,0 +1,13 @@
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /assets/
+
+User-agent: Googlebot
+Disallow: /PHPMailer/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.decorafacil.arq.br/sitemap.xml
