@@ -9,8 +9,6 @@ $(document).ready(function () {
             txt_mensagem: $("#txt_mensagem").val()
         };
 
-        console.log("formData");
-        console.log(formData);
         $.ajax({
             type: "POST",
             url: "process.php",
@@ -82,7 +80,7 @@ $(document).ready(function () {
                 }
             } else {
                 $("form").html(
-                    '<div class="alert alert-success">Mensagem enviada com sucesso</div>"
+                    '<div class="alert alert-success">Mensagem enviada com sucesso</div>'
                 );
             }
         });
